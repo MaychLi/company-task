@@ -1,0 +1,66 @@
+@import '@/app/styles/variables';
+
+.mainPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: $spacing-xl 0;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: $spacing-xl;
+  
+  h1 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: $spacing-md;
+  }
+  
+  p {
+    font-size: 18px;
+    color: $text-secondary;
+  }
+}
+
+.authCard {
+  width: 100%;
+  max-width: 400px;
+  
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: $spacing-lg;
+  }
+}
+
+.authForm {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-md;
+}
+
+.dashboard {
+  width: 100%;
+  max-width: 600px;
+}
+
+.dashboardCard {
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: $spacing-lg;
+  }
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-md;
+  margin-bottom: $spacing-lg;
+}
+
+.logoutButton {
+  margin-top: $spacing-md;
+}
+

@@ -1,0 +1,78 @@
+@import '@/app/styles/variables';
+
+.selectorWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: $spacing-md;
+  position: relative;
+}
+
+.label {
+  margin-bottom: $spacing-xs;
+  font-size: 14px;
+  color: $text-secondary;
+}
+
+.selector {
+  position: relative;
+  border: 1px solid $border-color;
+  border-radius: $border-radius-md;
+  background-color: white;
+  
+  &.selectorError {
+    border-color: red;
+  }
+}
+
+.selectorValue {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 12px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.arrow {
+  font-size: 12px;
+  transition: transform 0.2s ease;
+  
+  &.arrowUp {
+    transform: rotate(180deg);
+  }
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border: 1px solid $border-color;
+  border-radius: $border-radius-md;
+  margin-top: 4px;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 10;
+  box-shadow: $shadow-md;
+}
+
+.option {
+  padding: 10px 12px;
+  cursor: pointer;
+  
+  &:hover {
+    background-color: rgba($primary, 0.1);
+  }
+  
+  &.selected {
+    background-color: rgba($primary, 0.2);
+  }
+}
+
+.errorMessage {
+  margin-top: $spacing-xs;
+  font-size: 14px;
+  color: red;
+}
+

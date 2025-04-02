@@ -1,0 +1,28 @@
+@import '@/app/styles/variables';
+
+.header {
+  background-color: $background-primary;
+  box-shadow: $shadow-sm;
+  padding: 16px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 18px;
+  
+  img {
+    height: 32px;
+  }
+}
+

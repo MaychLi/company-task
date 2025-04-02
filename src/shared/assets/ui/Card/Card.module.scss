@@ -1,0 +1,9 @@
+@import '@/app/styles/variables';
+
+.card {
+  background-color: $background-primary;
+  border-radius: $border-radius-lg;
+  box-shadow: $shadow-sm;
+  padding: $spacing-lg;
+}
+

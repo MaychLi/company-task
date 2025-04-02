@@ -1,0 +1,65 @@
+@import '@/app/styles/variables';
+
+.companyDetails {
+  margin-bottom: $spacing-lg;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: $spacing-lg;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.actions {
+  display: flex;
+  gap: $spacing-sm;
+}
+
+.content {
+  margin-top: $spacing-md;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $spacing-md;
+  
+  @media (max-width: $breakpoint-md) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: $spacing-md;
+  
+  @media (max-width: $breakpoint-md) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.detailItem {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: $spacing-md;
+}
+
+.label {
+  font-size: 14px;
+  color: $text-secondary;
+  margin-bottom: $spacing-xs;
+}
+
+.value {
+  font-size: 16px;
+  font-weight: 500;
+}
+
